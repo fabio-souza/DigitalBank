@@ -5,6 +5,12 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalBank.GraphQL.Service", "DigitalBank.GraphQL.Service\DigitalBank.GraphQL.Service.csproj", "{061D9A48-84E0-4F3A-9E74-7B67976A4A77}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalBank.EntityModels", "DigitalBank.EntityModels\DigitalBank.EntityModels.csproj", "{98C25846-2656-4D3D-8764-9C0FAB3E5831}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalBank.Common", "DigitalBank.Common\DigitalBank.Common.csproj", "{A71F3D69-99FC-470D-BF16-BED2C83BCCCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalBank.DataContext.MySql", "DigitalBank.DataContext.MySql\DigitalBank.DataContext.MySql.csproj", "{D6FA9FA2-BBE4-4FA4-9DAF-5C7611471A62}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{061D9A48-84E0-4F3A-9E74-7B67976A4A77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{061D9A48-84E0-4F3A-9E74-7B67976A4A77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{061D9A48-84E0-4F3A-9E74-7B67976A4A77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98C25846-2656-4D3D-8764-9C0FAB3E5831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98C25846-2656-4D3D-8764-9C0FAB3E5831}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98C25846-2656-4D3D-8764-9C0FAB3E5831}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98C25846-2656-4D3D-8764-9C0FAB3E5831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A71F3D69-99FC-470D-BF16-BED2C83BCCCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A71F3D69-99FC-470D-BF16-BED2C83BCCCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A71F3D69-99FC-470D-BF16-BED2C83BCCCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A71F3D69-99FC-470D-BF16-BED2C83BCCCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6FA9FA2-BBE4-4FA4-9DAF-5C7611471A62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6FA9FA2-BBE4-4FA4-9DAF-5C7611471A62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6FA9FA2-BBE4-4FA4-9DAF-5C7611471A62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6FA9FA2-BBE4-4FA4-9DAF-5C7611471A62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
