@@ -1,8 +1,8 @@
-﻿using DigitalBank.DataContext.MySql.EntityConfiguration;
+﻿using DigitalBank.Infrastructure.EntityConfiguration;
 using Microsoft.EntityFrameworkCore;
-using DigitalBank.EntityModels;
+using DigitalBank.Domain.Entities;
 
-namespace DigitalBank.DataContext.MySql;
+namespace DigitalBank.Infrastructure;
 
 public class DigitalBankContext : DbContext
 {

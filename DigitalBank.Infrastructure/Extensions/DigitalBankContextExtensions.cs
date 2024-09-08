@@ -1,7 +1,10 @@
+using DigitalBank.Infrastructure;
+using DigitalBank.Domain.Interfaces;
+using DigitalBank.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore; // UserMysql
 using Microsoft.Extensions.DependencyInjection; // IServiceCollection
 
-namespace DigitalBank.DataContext.MySql;
+namespace DigitalBank.Infrastructure.Extensions;
 
 public static class NorthwindContextExtensions
 {
@@ -32,5 +35,12 @@ public static class NorthwindContextExtensions
         });
 
         return services;
+    }
+
+    public static IServiceCollection AddDigitalBankRepositories(this IServiceCollection services)
+    {
+      services.AddTransient<IClientRepository, ClientRepository>();
+
+      return services;
     }
 }

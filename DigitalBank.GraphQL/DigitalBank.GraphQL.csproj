@@ -14,7 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DigitalBank.DataContext.MySql\DigitalBank.DataContext.MySql.csproj" />
+    <ProjectReference Include="..\DigitalBank.Domain\DigitalBank.Domain.csproj" />
+    <ProjectReference Include="..\DigitalBank.Infrastructure\DigitalBank.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

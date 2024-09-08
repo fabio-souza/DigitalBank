@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DigitalBank.EntityModels\DigitalBank.EntityModels.csproj" />
+    <ProjectReference Include="..\DigitalBank.Domain\DigitalBank.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace DigitalBank.EntityModels;
+﻿namespace DigitalBank.Domain.Entities;
 
 public class Client : Entity
 {

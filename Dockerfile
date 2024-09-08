@@ -2,14 +2,14 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build-env
 WORKDIR /App
 
 # Copy project files
-COPY DigitalBank.GraphQL.Service/*.csproj ./DigitalBank.GraphQL.Service/
+COPY DigitalBank.GraphQL/*.csproj ./DigitalBank.GraphQL/
 # Restore as distinct layers
-RUN dotnet restore DigitalBank.GraphQL.Service/DigitalBank.GraphQL.Service.csproj
+RUN dotnet restore DigitalBank.GraphQL/DigitalBank.GraphQL.csproj
 
 # Copy the rest of the application
 COPY . ./
 # Build and publish a release
-RUN dotnet publish DigitalBank.GraphQL.Service/DigitalBank.GraphQL.Service.csproj -c Release -o out
+RUN dotnet publish DigitalBank.GraphQL/DigitalBank.GraphQL.csproj -c Release -o out
 
 # Build runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
@@ -20,4 +20,4 @@ COPY --from=build-env /App/out .
 EXPOSE 8080
 
 # Set the entry point to run the application
-ENTRYPOINT ["dotnet", "DigitalBank.GraphQL.Service.dll"]
+ENTRYPOINT ["dotnet", "DigitalBank.GraphQL.dll"]

@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalBank.GraphQL.Service", "DigitalBank.GraphQL.Service\DigitalBank.GraphQL.Service.csproj", "{061D9A48-84E0-4F3A-9E74-7B67976A4A77}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalBank.Common", "DigitalBank.Common\DigitalBank.Common.csproj", "{2707EC0D-88AF-414F-980A-0FFF921BE990}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalBank.EntityModels", "DigitalBank.EntityModels\DigitalBank.EntityModels.csproj", "{98C25846-2656-4D3D-8764-9C0FAB3E5831}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalBank.Domain", "DigitalBank.Domain\DigitalBank.Domain.csproj", "{23AD8E2C-D4B8-4454-B15B-88F95F543392}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalBank.Common", "DigitalBank.Common\DigitalBank.Common.csproj", "{A71F3D69-99FC-470D-BF16-BED2C83BCCCE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalBank.GraphQL", "DigitalBank.GraphQL\DigitalBank.GraphQL.csproj", "{798DCCCD-B7CF-4052-B676-2BD5E2FA8225}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalBank.DataContext.MySql", "DigitalBank.DataContext.MySql\DigitalBank.DataContext.MySql.csproj", "{D6FA9FA2-BBE4-4FA4-9DAF-5C7611471A62}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalBank.Infrastructure", "DigitalBank.Infrastructure\DigitalBank.Infrastructure.csproj", "{2156D720-E7A7-46FD-B050-D4D071181B66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalBank.Tests", "DigitalBank.Tests\DigitalBank.Tests.csproj", "{0AF686A9-840A-4FA2-950D-2941620398F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,22 +19,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{061D9A48-84E0-4F3A-9E74-7B67976A4A77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{061D9A48-84E0-4F3A-9E74-7B67976A4A77}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{061D9A48-84E0-4F3A-9E74-7B67976A4A77}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{061D9A48-84E0-4F3A-9E74-7B67976A4A77}.Release|Any CPU.Build.0 = Release|Any CPU
-		{98C25846-2656-4D3D-8764-9C0FAB3E5831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{98C25846-2656-4D3D-8764-9C0FAB3E5831}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{98C25846-2656-4D3D-8764-9C0FAB3E5831}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{98C25846-2656-4D3D-8764-9C0FAB3E5831}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A71F3D69-99FC-470D-BF16-BED2C83BCCCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A71F3D69-99FC-470D-BF16-BED2C83BCCCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A71F3D69-99FC-470D-BF16-BED2C83BCCCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A71F3D69-99FC-470D-BF16-BED2C83BCCCE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D6FA9FA2-BBE4-4FA4-9DAF-5C7611471A62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D6FA9FA2-BBE4-4FA4-9DAF-5C7611471A62}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D6FA9FA2-BBE4-4FA4-9DAF-5C7611471A62}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D6FA9FA2-BBE4-4FA4-9DAF-5C7611471A62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2707EC0D-88AF-414F-980A-0FFF921BE990}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2707EC0D-88AF-414F-980A-0FFF921BE990}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2707EC0D-88AF-414F-980A-0FFF921BE990}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2707EC0D-88AF-414F-980A-0FFF921BE990}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23AD8E2C-D4B8-4454-B15B-88F95F543392}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23AD8E2C-D4B8-4454-B15B-88F95F543392}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23AD8E2C-D4B8-4454-B15B-88F95F543392}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23AD8E2C-D4B8-4454-B15B-88F95F543392}.Release|Any CPU.Build.0 = Release|Any CPU
+		{798DCCCD-B7CF-4052-B676-2BD5E2FA8225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{798DCCCD-B7CF-4052-B676-2BD5E2FA8225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{798DCCCD-B7CF-4052-B676-2BD5E2FA8225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{798DCCCD-B7CF-4052-B676-2BD5E2FA8225}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2156D720-E7A7-46FD-B050-D4D071181B66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2156D720-E7A7-46FD-B050-D4D071181B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2156D720-E7A7-46FD-B050-D4D071181B66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2156D720-E7A7-46FD-B050-D4D071181B66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AF686A9-840A-4FA2-950D-2941620398F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AF686A9-840A-4FA2-950D-2941620398F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AF686A9-840A-4FA2-950D-2941620398F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AF686A9-840A-4FA2-950D-2941620398F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

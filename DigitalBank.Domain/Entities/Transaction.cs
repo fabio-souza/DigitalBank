@@ -1,6 +1,6 @@
-using DigitalBank.Common;
+using DigitalBank.Common.Types;
 
-namespace DigitalBank.EntityModels;
+namespace DigitalBank.Domain.Entities;
 
 public class Transaction : Entity
 {

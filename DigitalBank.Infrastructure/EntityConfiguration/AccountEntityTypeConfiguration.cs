@@ -1,9 +1,9 @@
-using DigitalBank.EntityModels;
+using DigitalBank.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace DigitalBank.DataContext.MySql.EntityConfiguration;
+namespace DigitalBank.Infrastructure.EntityConfiguration;
 
 public class AccountEntityTypeConfiguration : BaseEntityTypeConfiguration<Account>
 {

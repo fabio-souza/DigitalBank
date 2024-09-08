@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace DigitalBank.DataContext.MySql.Migrations
+namespace DigitalBank.Infrastructure.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration

@@ -1,4 +1,4 @@
-﻿namespace DigitalBank.Common;
+﻿namespace DigitalBank.Common.Types;
 
 public enum TransactionType
 {
